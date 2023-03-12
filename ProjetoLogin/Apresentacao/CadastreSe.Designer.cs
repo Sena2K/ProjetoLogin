@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txbLogin = new System.Windows.Forms.TextBox();
             this.txbSenha = new System.Windows.Forms.TextBox();
-            this.txnConfirmar = new System.Windows.Forms.TextBox();
+            this.txbConfirmar = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -80,22 +80,23 @@
             this.txbSenha.Size = new System.Drawing.Size(148, 20);
             this.txbSenha.TabIndex = 4;
             // 
-            // txnConfirmar
+            // txbConfirmar
             // 
-            this.txnConfirmar.Location = new System.Drawing.Point(104, 244);
-            this.txnConfirmar.Name = "txnConfirmar";
-            this.txnConfirmar.PasswordChar = '*';
-            this.txnConfirmar.Size = new System.Drawing.Size(148, 20);
-            this.txnConfirmar.TabIndex = 5;
+            this.txbConfirmar.Location = new System.Drawing.Point(104, 244);
+            this.txbConfirmar.Name = "txbConfirmar";
+            this.txbConfirmar.PasswordChar = '*';
+            this.txbConfirmar.Size = new System.Drawing.Size(148, 20);
+            this.txbConfirmar.TabIndex = 5;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(104, 308);
+            this.btnCadastrar.Location = new System.Drawing.Point(104, 301);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(197, 46);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // CadastreSe
             // 
@@ -103,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 419);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.txnConfirmar);
+            this.Controls.Add(this.txbConfirmar);
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.txbLogin);
             this.Controls.Add(this.label3);
@@ -124,7 +125,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbLogin;
         private System.Windows.Forms.TextBox txbSenha;
-        private System.Windows.Forms.TextBox txnConfirmar;
+        private System.Windows.Forms.TextBox txbConfirmar;
         private System.Windows.Forms.Button btnCadastrar;
     }
 }
